@@ -1,0 +1,359 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;    
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.sidebar{
+    width: 300px;
+   background-color: rgb(7, 7, 7); 
+   position: fixed;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   padding: 10px;
+   
+}
+.sidebar-nav{
+    background-color: rgb(29, 28, 28); 
+
+border-radius: 10px;
+margin-bottom: 10px;
+
+}
+.sidebar-nav .logo{
+    width: 92px;
+
+}
+.sidebar-nav .logo img{
+    width: 85%;
+    
+
+}
+.sidebar-nav ul{
+    list-style: none;
+    padding-left: 0;
+    padding-bottom:0;
+    
+}
+.sidebar-nav ul li{
+padding:10px 20px;
+}
+.sidebar-nav ul li a:hover{
+    color:white;
+}
+.sidebar-nav ul a{
+    text-decoration: none;
+    color: #b3b3b3;
+     font-size: 16px;
+    font-weight: 600;
+}
+.library::after{
+    content: '+';
+    float: right;
+    text-align: center;
+    background-color: rgb(50, 48, 48);
+    padding: 5px;
+    border-radius:20% ;
+    font-size: 15px;
+}
+.create-playlist{
+    background-color: rgb(60, 58, 58);
+
+padding: 30px 15px;
+border-radius: 10px;
+margin-bottom: 10px;
+
+}
+.sidebar-scroll{
+    height: 120px;
+    overflow-y:auto ;
+}
+.sidebar-scroll::-webkit-scrollbar{
+    background: transparent;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb{
+    background:grey;
+    width: 10px;
+}
+.create-playlist h4{
+    color: whitesmoke;
+    font-size: 15px;
+}
+.create-playlist p{
+    color: whitesmoke;
+    font-size: 12px;
+    margin: 12px 0;
+}
+.create-playlist button{
+    padding:8px 15px ;
+    border:0 ;
+    outline: 0;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom:10px ;
+}
+.privacy ul li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 5px;
+    list-style-type: none;
+
+}
+.privacy ul li a:hover{
+    text-decoration: underline;
+    color: grey;
+    
+
+}
+.privacy ul{
+  list-style: none; 
+  margin-top: 10px;  
+}
+.privacy ul li{
+    padding-bottom: 0 10px;
+    padding-bottom: 8px;
+}
+.english-btn{
+    padding: 20px 30px;
+}
+.english-btn button{
+    padding: 10px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+color: whitesmoke;
+border: 1px solid white;
+border-radius: 20px;
+margin:10px 0 ;
+
+}
+.english-btn button:hover{
+padding: 11px 31px;
+border: 1px solid rgb(192, 185, 185);
+}
+.main-section{
+    margin-left: 310px;
+    background: #181818;
+    height:200vh ;
+    overflow-y: auto;
+    margin-bottom: 90px;
+}
+.main-section::-webkit-scrollbar{
+  background: transparent;
+}
+    
+.main-section::-webkit-scrollbar{
+        background: transparent;
+    }
+    .main-sectionl::-webkit-scrollbar-thumb{
+        background:rgb(6, 6, 6);
+        width: 10px;
+}
+.main-section .top-nav{
+padding: 20px 30px ;
+background: #030303;
+}
+.main-section .top-nav{
+    padding: 20px 30px;
+    background: #030303;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-section .top-nav button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+.main-section .top-nav .prev-btn button i{
+    color: #b3b3b3;
+    font-size: 22px;
+    margin-right: 20px;
+}
+.top-nav .login-btn .sign-up{
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 15px;
+
+}
+.top-nav .login-btn .sign-up:hover{
+  color: white;
+}
+.top-nav .login-btn .login{
+    color:rgb(31, 30, 30);
+    font-size: 18px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 10px 15px;
+  border-radius: 20px;
+}
+.top-nav .login-btn .login:hover{
+background: #b3b3b3;
+
+}
+.spotify-playlist{
+    padding: 20px 40px;
+}
+.spotify-playlist h2{
+    color: whitesmoke;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.spotify-playlist .card{
+    display: flex;
+    gap: 20px;
+  overflow: hidden;
+}
+.spotify-playlist .card .item{
+width: 190px;
+min-width: 140px;
+background-color: #2f2e2e;
+cursor: pointer;
+padding: 15px;
+border-radius: 6px;
+}
+.spotify-playlist .card .item:hover{
+background-color: #575454;
+
+}
+.spotify-playlist .card .item img{
+    width: 100%;
+    border-radius: 6px;
+   margin-bottom: 10px;
+}
+.spotify-playlist .item h4{
+    color:white ;
+}
+.spotify-playlist .item p{
+    color:whitesmoke ;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.spotify-playlist .item p:hover{
+    text-decoration: underline;
+}
+.spotify-playlist .play-btn{
+    position: relative;
+}
+.spotify-playlist .play-btn i{
+    position: absolute;
+    background: rgb(85, 168, 85);
+    border-radius: 50%;
+    padding: 10px;
+    right: 5px;
+    top: -60px;
+    opacity: 0;
+transform: 0.3s ease all;
+}
+.spotify-playlist .card .item:hover .play-btn i{
+    opacity: 1;
+    transform: translate(-20px);
+}
+.footer-section{
+    padding: 20px 40px;
+}
+.footer-section .footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;  
+
+}
+.footer-section .footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.footer-section .footer .footer-links .footer-column{
+margin: 0 12px;
+
+
+}
+.footer-section .footer .footer-links div{
+color: #fff;
+font-weight: 600;
+margin-bottom: 12px;
+font-size: 16px;
+
+}
+.footer-section .footer .footer-links ul li{
+list-style: none;
+margin: 6px 0;
+}
+.footer-section .footer .footer-links ul li a{
+text-decoration: none;
+color: #b3b3b3;
+font-size:14px ;
+cursor: pointer;
+}
+.footer-section .footer .footer-links ul  li a:hover{
+    text-decoration: underline;
+    color: #938787;
+    }
+.footer .social-links i{
+    color: #fff;
+    background-color: #353434;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+.footer .social-links i:hover{
+    
+    background-color: #534f4f;
+   
+}
+
+hr{
+   margin: 20px 40px; 
+   
+   border: 0;
+   outline: 0;
+border: 1px solid #353434;
+margin-top: 40px;
+}
+.copyright{
+    padding: 0 40px;
+    color: #b3b3b3;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.preview{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ae2896,#509bf5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 30px;
+}
+.preview h4{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.preview p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.preview button{
+    padding: 12px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
